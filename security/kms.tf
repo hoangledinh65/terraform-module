@@ -8,7 +8,7 @@ resource "aws_kms_key" "a" {
 }
 
 resource "aws_kms_alias" "a" {
-  name          = "alias/my-key-alias"
+  name          = "alias/hoangdl-key1"
   target_key_id = aws_kms_key.a.key_id
 }
 
